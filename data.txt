@@ -1,0 +1,32 @@
+a bat is a chiropter
+a chiropter is a flier
+a chiropter is a scrotifer
+a mammal is not a flier
+a scrotifer is a mammal
+a bird is an avian
+an avian is a chordate
+a chordate is an animal
+a mammal is a vertebrate
+a vertebrate is a chordate
+a simian is a primate
+a primate is a mammal
+a human is a primate
+a monkey is a simian
+a carrot is a daucus
+a daucus is an apiaceae
+an apiaceae is an apiale
+an apiale is a plant
+a plant is a lifeform
+an animal is a lifeform
+a plant is not an animal
+an animal is not a plant
+an avian is a flier
+a nonflyingbird is a bird
+a nonflyingbird is not a flier
+a penguin is a nonflyingbird
+an emu is a ratite
+an ostrich is a ratite
+a cassowary is a ratite
+a rhea is a ratite
+a kiwi is a ratite
+a ratite is a nonflyingbird
