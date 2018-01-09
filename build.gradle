@@ -1,0 +1,46 @@
+apply plugin: "cpp"
+
+model {
+  platforms {
+    x64
+  }
+  buildTypes {
+    debug
+    release
+  }
+  repositories {
+    libs(PrebuiltLibraries) {
+      pegtl {
+        headers.srcDir "../PEGTL/include"
+      }
+    }
+  }
+  toolChains {
+    gcc(Gcc) {
+      path "/usr/local/gcc-7.1.0/bin"
+    }
+  }
+  binaries {
+    all {
+      cppCompiler.args "-std=c++17"
+      if (buildType == buildTypes.debug) {
+        cppCompiler.args "-g"
+      }
+      if (buildType == buildTypes.release) {
+        cppCompiler.args "-O"
+      }
+    }
+  }
+  components {
+    classify(NativeExecutableSpec) {
+      sources {
+        cpp {
+          lib library: "pegtl", linkage: "api"
+          source {
+            include "*.cc"
+          }
+        }
+      }
+    }
+  }
+}
