@@ -12,17 +12,17 @@ template <typename kw>
 struct keyword : seq<kw, kw_end> { };
 
 struct a     : keyword<one<'a'>> { };
-struct an    : keyword<TAOCPP_PEGTL_ISTRING("an")> { };
-struct the   : keyword<TAOCPP_PEGTL_ISTRING("the")> { };
-struct is    : keyword<TAOCPP_PEGTL_ISTRING("is")> { };
-struct why   : keyword<TAOCPP_PEGTL_ISTRING("why")> { };
-struct NOT   : keyword<TAOCPP_PEGTL_ISTRING("not")> { };
-struct bye   : keyword<TAOCPP_PEGTL_ISTRING("bye")> { };
-struct dump  : keyword<TAOCPP_PEGTL_ISTRING("dump")> { };
-struct save  : keyword<TAOCPP_PEGTL_ISTRING("save")> { };
-struct load  : keyword<TAOCPP_PEGTL_ISTRING("load")> { };
-struct help  : keyword<TAOCPP_PEGTL_ISTRING("help")> { };
-struct forget: keyword<TAOCPP_PEGTL_ISTRING("forget")> { };
+struct an    : keyword<TAO_PEGTL_ISTRING("an")> { };
+struct the   : keyword<TAO_PEGTL_ISTRING("the")> { };
+struct is    : keyword<TAO_PEGTL_ISTRING("is")> { };
+struct why   : keyword<TAO_PEGTL_ISTRING("why")> { };
+struct NOT   : keyword<TAO_PEGTL_ISTRING("not")> { };
+struct bye   : keyword<TAO_PEGTL_ISTRING("bye")> { };
+struct dump  : keyword<TAO_PEGTL_ISTRING("dump")> { };
+struct save  : keyword<TAO_PEGTL_ISTRING("save")> { };
+struct load  : keyword<TAO_PEGTL_ISTRING("load")> { };
+struct help  : keyword<TAO_PEGTL_ISTRING("help")> { };
+struct forget: keyword<TAO_PEGTL_ISTRING("forget")> { };
 struct QMARK : one<'?'> { };
 
 struct article : sor<the, an, a> { };
