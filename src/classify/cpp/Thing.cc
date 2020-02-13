@@ -4,11 +4,6 @@
  *
  * Comments:
  *
- * (C) Copyright Parasoft Corporation 211.  All rights reserved.
- * THIS IS UNPUBLISHED PROPRIETARY SOURCE CODE OF Parasoft
- * The copyright notice above does not evidence any
- * actual or intended publication of such source code.
- *
  * $Author: $          $Locker:  $
  * $Date:  $
  * $Log:  $
