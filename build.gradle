@@ -17,7 +17,7 @@ model {
   }
   toolChains {
     gcc(Gcc) {
-      path "/usr/local/gcc-7.1.0/bin"
+      path "/usr/local/gcc-9.2.0/bin"
     }
   }
   binaries {

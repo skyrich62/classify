@@ -4,7 +4,7 @@ a chiropter is a scrotifer
 a mammal is not a flier
 a scrotifer is a mammal
 a bird is an avian
-an avian is a chordate
+an avian is a vertebrate
 a chordate is an animal
 a mammal is a vertebrate
 a vertebrate is a chordate
