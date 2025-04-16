@@ -266,6 +266,10 @@ template<> struct action<grammar::explain_last>
     template <typename Input>
     static void apply(const Input &in, state &s)
     {
+        if (explainer.empty()) {
+          std::cout << "Why what?" << std::endl;
+          return;
+        }
         explainer.explain();
     }
 };
@@ -355,6 +359,7 @@ template<> struct action<grammar::forget>
     static void apply(const Input &in, state &s)
     {
         Thing::forget();
+        explainer.reset();
         std::cout << "I've forgotten everything you told me." << std::endl;
     }
 };

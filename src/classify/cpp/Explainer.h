@@ -23,6 +23,7 @@ public:
     void addFact(Thing* thing1, Thing* thing2, bool isOrIsNot);
     void explain(void);
     void reset(void);
+    bool empty() const { return _chain.empty(); }
 private:
     class Fact {
     public:
